@@ -1,5 +1,6 @@
 # -
 //5.HOOK对象属性
+
 lingdu.hookObj = function hookObj(obj, objName, propName, isDebug){
     // obj :需要hook的对象
     // objName: hook对象的名字
@@ -12,6 +13,7 @@ lingdu.hookObj = function hookObj(obj, objName, propName, isDebug){
         return;
     }
     // 必须有的属性描述
+    
     newDescriptor.configurable = true;
 
     if(oldDescriptor.hasOwnProperty("writable")){
